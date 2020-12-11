@@ -1,13 +1,21 @@
 /* import fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+	--blue: #4EA5D9;
+	--white: #F4ECD6;
+	--green: #514B23;
+	--brown: #A37871;
+	--black: #32292F;
+}
+
 * {
 	font-family: "Roboto", sans-serif;
 }
 
 html {
-	background-color: #222222;
-	color: #eeeeee;
+	background-color: var(--black);
+	color: var(--white);
 }
 
 body {
@@ -17,7 +25,7 @@ body {
 
 #top-bar ul {
 	list-style: none;
-	background-color: #666666;
+	background-color: var(--green);
 	margin: 0;
 	padding-left: 1rem;
 }
@@ -26,17 +34,21 @@ body {
 	display: inline;
 }
 
+#top-bar a {
+	color: var(--blue);
+}
+
 p, h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
 a:link, a:visited {
-	color: #ab77ef;
+	color: var(--brown);
 	text-decoration: none;
 }
 
 a:hover {
-	color: #d5c2ef;
+	color: var(--blue);
 	text-decoration: underline;
 }
 
