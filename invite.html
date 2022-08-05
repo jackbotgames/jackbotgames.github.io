@@ -12,7 +12,18 @@
 	<meta property="og:description" content="We made a discord bot for gamers.">
 	<meta property="og:image" content="https://jackbotgames.github.io/assets/jackbot.png">
 	<meta property="og:url" content="https://jackbotgames.github.io">
-	<title>Jackbot Games</title>
+	<title>Jackbot Games - Redirecting...</title>
+	<script type="application/javascript">
+		let DownloadLink = "https://discord.com/oauth2/authorize?client_id=775408192242974726&permissions=0&scope=bot%20applications.commands"
+		let timer = 3;
+		setInterval(function(){
+			timer -= 1;
+			document.getElementById("timer").innerText = `${timer}`
+			if(timer <= 0) {
+				document.location.replace(`${DownloadLink}`);
+			}
+		}, 1000);
+	</script>
 </head>
 <body>
 	<div id=top-bar>
@@ -24,17 +35,7 @@
 			<li><a href="/support" target="_blank">support</a></li>
 		</ul>
 	</div>
-	<h1>Jackbot Games</h1>
-	<p>Discord bot for gaming in discord. Has Zany™ games such as Minesweeper, Rock Paper Scissors, and Tic Tac Toe! <a href="/support">Check it out!</a></p>
-	<h2>Specifics?</h2>
-	<p>Minesweeper - /minesweeper. Sends a grid of spoilered emojis, which correspond to the tiles of a game.</p>
-	<p>Rock Paper Scissors - /rockpaperscissors. Uses components to let you and the other player select.</p>
-	<p>Tic Tac Toe - /tictactoe. Sends a playable tic tac toe grid.</p>
-	<p>Connect 4 - /connect4. Sends a playable connect four grid. Select a number and it'll play it.</p>
-
-	<h2>Invite?</h2>
-	<p><a href="https://top.gg/bot/775408192242974726">top.gg link</a></p>
-	<p><a href="/invite">discord link</a></p>
-
+	<h1>Redirecting to invite in <span id="timer">3</span>...</h1>
+	<p>If this redirect doesn't work, click <a href="https://discord.com/oauth2/authorize?client_id=775408192242974726&permissions=0&scope=bot%20applications.commands">here</a>.</p>
 </body>
 </html>
